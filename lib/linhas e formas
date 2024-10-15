@@ -1,0 +1,98 @@
+Set<Marker> _marcadores = {};
+  Set<Polygon> _polygons = {};
+  Set<Polyline> _polylines = {};
+
+_carregarMarcadores() {
+    /*
+    Set<Marker> marcadoresLocal = {
+
+    };
+
+    Marker marcadorZpe = Marker(
+        markerId: MarkerId("marcador-zpe"),
+      position: LatLng(-2.957981, -41.770228),
+      infoWindow: InfoWindow(
+        title: "ZPE empresa de transporte"
+      ),
+      icon: BitmapDescriptor.defaultMarkerWithHue(
+        BitmapDescriptor.hueMagenta
+      ),
+      // rotation: 45
+      onTap: (){
+          print("zpe clicado");
+      }
+
+    );
+    Marker marcadorHigia = Marker(
+        markerId: MarkerId("marcador-higia"),
+        position: LatLng(-2.957475, -41.770266),
+      infoWindow: InfoWindow(
+        title: "Higia empresa de tecnologia"
+      ),
+        icon: BitmapDescriptor.defaultMarkerWithHue(
+            BitmapDescriptor.hueGreen
+        ),
+        onTap: (){
+          print("higia clicado");
+        }
+    );
+
+    marcadoresLocal.add(marcadorZpe);
+    marcadoresLocal.add(marcadorHigia);
+
+    setState(() {
+      _marcadores = marcadoresLocal;
+    });
+ */
+
+    /*
+    Set <Polygon> listaPolygons = {};
+    Polygon porygon = Polygon(
+        polygonId: PolygonId("porygon"),
+      fillColor: Colors.transparent,
+      strokeColor: Colors.red,
+      strokeWidth: 5,
+      points: [
+        LatLng(-2.958867, -41.768406),
+        LatLng(-2.957925, -41.772299),
+        LatLng(-2.956098, -41.771822),
+        LatLng(-2.957117, -41.767885),
+      ],
+      consumeTapEvents: true,
+      onTap: (){
+          print("Clicado dentro da area");
+      }
+    );
+
+    listaPolygons.add( porygon );
+
+    setState(() {
+      _polygons = listaPolygons;
+    });
+
+    */
+
+    Set<Polyline> listaPolylines = {};
+    Polyline polyline = Polyline(
+        polylineId: PolylineId("polyline"),
+        color: Colors.red,
+        width: 15,
+        startCap: Cap.roundCap,
+        endCap: Cap.roundCap,
+        jointType: JointType.round,
+        points: [
+          LatLng(-2.958867, -41.768406),
+          LatLng(-2.957925, -41.772299),
+          LatLng(-2.956098, -41.771822),
+        ],
+        consumeTapEvents: true,
+        onTap: () {
+          print("Clicado na linha");
+        }
+    );
+
+    listaPolylines.add(polyline);
+    setState(() {
+      _polylines = listaPolylines;
+    });
+  }

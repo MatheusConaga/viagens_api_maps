@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "435991270873",
+    "project_id": "viagens-api",
+    "storage_bucket": "viagens-api.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:435991270873:android:80d386eb165a19e6f475c8",
+        "android_client_info": {
+          "package_name": "com.example.viagens_google"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAC0d9n9KRfuvClllshCuEAqeriXYB6lCA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
